@@ -53,7 +53,3 @@ Instead of just "sign up," I’ll give you a full **mini action plan** so you en
 * Zapier account + 1 Zap live
 * Make account + 1 Scenario live
 * A personal “automation journal” started with screenshots + notes
-
----
-
-Want me to also design a **step-by-step “Day 12” (your first Zap: Gmail → Google Sheet log)** in the same expanded style, so each day feels like a workshop?
