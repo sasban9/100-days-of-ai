@@ -132,13 +132,13 @@ Perfect — let’s turn the **100-day AI roadmap** into a **daily checklist**. 
 
 * **Day 71:** Decide: freelancer, product, or agency path.
 * **Day 72:** Create a simple “AI services” one-pager.
-* **Day 73:** Build pricing packages (₹10k–₹50k projects).
+* **Day 73:** Build pricing packages ($10k–$50k projects).
 * **Day 74:** Create a pitch deck for one niche (e.g., real estate).
 * **Day 75:** Reach out to 5 businesses with free AI audit offer.
 * **Day 76:** Offer to set up 1 chatbot for free → upsell.
 * **Day 77:** Publish 1 Gumroad template (chatbot/app).
 * **Day 78:** Post a LinkedIn case study of a mini project.
-* **Day 79:** Try closing first paying project (₹10k–₹20k).
+* **Day 79:** Try closing first paying project ($10k–$20k).
 * **Day 80:** Celebrate → document learnings.
 
 ---
@@ -161,7 +161,7 @@ Perfect — let’s turn the **100-day AI roadmap** into a **daily checklist**. 
 ## **Days 91–100: Final Launch**
 
 * **Day 91:** Review all projects → polish.
-* **Day 92:** Build portfolio site on Carrd/Webflow.
+* **Day 92:** Build portfolio site on 
 * **Day 93:** Add prompt playbook + automations.
 * **Day 94:** Add apps + chatbots.
 * **Day 95:** Add brand kit + workflow demo.
