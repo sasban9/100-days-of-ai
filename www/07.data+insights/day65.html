@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Day 60 of 100: Hands-on AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Homenaje&family=Kranky&family=Mynerve&family=Quintessential&family=Rationale&family=Sixtyfour&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            overflow: hidden;
+            font-size: 1.6rem;
+        }
+
+        b {
+            font-family: "Coming Soon", fantasy;
+            color: brown;
+            font-size: 1.8rem;
+        }
+
+        section {
+            display: none;
+            height: 100vh;
+            width: 100vw;
+            padding: 10px 30px;
+            box-sizing: border-box;
+            line-height: 2;
+        }
+
+        section.active {
+            display: flex;gap:1rem;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        section:nth-child(odd) {
+            background: #c837;
+        }
+
+        section:nth-child(even) {
+            background: #dfefff;
+        }
+
+        .slide-item {
+            opacity: 0;
+            max-width: 33%;
+            /* text-align: center; */
+            box-shadow: -4px 0 4px #0003;
+            padding: 1rem;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .slide-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://media.istockphoto.com/id/1446438818/vector/sb-initial-letter-logo.jpg?s=612x612&w=0&k=20&c=7OCV0FllswCVpZ42E1sNzXfwHZRe0M-dnkZuPjGQn6Y="
+        height="140" alt="" style="position: absolute;bottom: 1rem;left: 1rem;z-index: 999;border-radius: 100%;">
+    <section class="active">
+        <h2>Day 65 — Lesson Expansion: Auto-Insights Dashboards with Akkio</h2>
+        <div class="slide-item">Great choice — Day 65 is all about <b>auto-insight dashboards in Akkio</b>, which is where no-code AI starts looking like real business intelligence work. </div>
+        <div class="slide-item">Let's turn this day into a <u>mini project</u> with clear lessons and hands-on exercises.</div>
+
+</section><section>
+
+<h2>Auto-Insights Dashboards with Akkio</h2>
+
+<div class="slide-item"><h3>Goal</h3>
+By the end of the day, you'll have created a <b>live AI-powered dashboard</b> in Akkio that automatically discovers trends, patterns, and anomalies in your data, then presents them in a business-friendly format.</div>
+
+</section><section>
+
+<h3>Lesson 1: What Are Auto-Insights Dashboards?</h3>
+
+<div class="slide-item">Auto-insights are AI-driven analyses that detect important patterns without manual pivoting or deep statistical work.</div>
+<div class="slide-item">
+    In Akkio, once you upload data (like sales, customer churn, marketing campaigns), the system will:<br>
+  &cir; Highlight key drivers of outcomes<br>
+  &cir; Spot anomalies (sudden spikes or drops)<br>
+  &cir; Visualize correlations automatically<br>
+  &cir; Suggest predictive signals you might miss manually
+</div>
+
+<div class="slide-item"><b>Takeaway:</b> These dashboards save hours of manual data crunching and make insights accessible to non-technical users.</div>
+
+</section><section>
+
+<h3>Lesson 2: Setting Up the Dashboard</h3>
+
+<div class="slide-item">1. <b>Log in to Akkio</b> → Open the “Insights” tab.</div>
+<div class="slide-item">2. <b>Upload a dataset</b> (could be sample data from Akkio, Kaggle, or your own business data).<br>
+   &cir; Example: Sales data, marketing campaign results, or customer demographics.</div>
+<div class="slide-item">3. Once data loads, click <b>Auto-Insights</b> → Akkio generates charts and patterns automatically.</div>
+
+</section><section>
+
+<h3>Lesson 3: Exploring Insights</h3>
+
+<div class="slide-item">Learn to read what Akkio highlights:<br>
+  &cir; <b>Top drivers</b>: Which features most affect your outcome (e.g., “Discount % drives sales strongly”).<br>
+  &cir; <b>Anomalies</b>: Unusual spikes or drops (“Revenue dropped sharply on weekends”).<br>
+  &cir; <b>Segments</b>: Subgroups in your data that behave differently (“Customers aged 25 - 35 respond best to email campaigns”).</div>
+<div class="slide-item">Tip: Toggle different views (correlations, importance, trends) to see how AI thinks.</div>
+
+</section><section>
+
+<h3>Lesson 4: Turning Insights into a Dashboard</h3>
+
+<div class="slide-item">Pin the most useful insights into a <b>dashboard view</b>.</div>
+<div class="slide-item">Customize it by:<br>
+  &cir; Renaming widgets (“Sales Drivers” instead of “Variable Importance”).<br>
+  &cir; Adding multiple datasets if needed.<br>
+  &cir; Choosing the most business-relevant KPIs.</div>
+<div class="slide-item">Share dashboard → create a <u>public or team link</u> for easy access.</div>
+
+</section><section>
+
+<h2>Exercises</h2>
+
+<div class="slide-item">1. <b>Beginner Exercise:</b> Upload Akkio's sample *E-commerce sales dataset*. Generate auto-insights. Identify the <u>top 3 drivers of sales</u>. <br>
+2. <b>Intermediate Exercise:</b> Pin 5 different insights into a custom dashboard. Save and name it “Sales Driver Dashboard.”</div>
+<div class="slide-item">3. <b>Advanced Exercise:</b><br>
+   &cir; Upload your own dataset (from work, side project, or open data).<br>
+   &cir; Create an auto-insight dashboard.<br>
+   &cir; Write a 200-word summary of the most surprising finding.<br>
+   &cir; Example: “We discovered that customers who order at night spend 30% more per transaction.”</div>
+
+</section><section>
+
+<h3>Lesson 5: Business Application</h3>
+
+<div class="slide-item">Share the dashboard with a hypothetical client or manager. Frame it as:<br>
+  &cir; “Here's a live dashboard that updates automatically and surfaces trends in real time.”</div>
+<div class="slide-item">
+    Think of <b>3 use cases</b>: <br>
+  1. Marketing: Which campaigns convert best.<br>
+  2. Sales: Which regions or discounts drive revenue.<br>
+  3. HR: Which employee factors predict retention.
+</div>
+
+</section><section>
+
+<h3>Deliverables for Day 65</h3>
+
+<div class="slide-item">&cir; At least <b>one working AI dashboard</b> in Akkio.<br>
+&cir; A <b>short write-up</b> of your top 3 insights.<br>
+&cir; A <b>shared link or screenshot</b> to showcase in your portfolio.</div>
+
+</section><section>
+
+<div class="slide-item">👉 By the end of Day 65, you don't just know how to use Akkio — you can demonstrate to clients how AI dashboards uncover hidden patterns in their data, which is a big value-add for consultants, freelancers, or agencies.</div>
+<div class="slide-item">Do you want me to expand <b>Day 66</b> next (live data from Google Sheets → real-time dashboard), since it's the natural continuation of this?</div>
+
+    </section>
+
+    <section>
+        <div class="slide-item">
+            <p>Thanks for watching!</p>
+        </div>
+        <div class="slide-item"><img src="https://sasban9.github.io/www/img/sasban2.jpg" height="200" alt=""></div>
+        <div class="slide-item"><b>2025 @sasban9</b></div>
+    </section>
+    <script>
+        let currentSection = 0;
+        let currentDiv = 0;
+        const sections = document.querySelectorAll("section");
+
+        function showNextDiv() {
+            const divs = sections[currentSection].querySelectorAll(".slide-item");
+            if (currentDiv < divs.length) {
+                divs[currentDiv].classList.add("visible");
+                currentDiv++;
+            } else {
+                if (currentSection < sections.length - 1) {
+                    sections[currentSection].classList.remove("active");
+                    currentSection++;
+                    sections[currentSection].classList.add("active");
+                    currentDiv = 0;
+                }
+            }
+        }
+
+        function showPrevDiv() {
+            const divs = sections[currentSection].querySelectorAll(".slide-item");
+            if (currentDiv > 0) {
+                currentDiv--;
+                divs[currentDiv].classList.remove("visible");
+            } else if (currentSection > 0) {
+                sections[currentSection].classList.remove("active");
+                currentSection--;
+                sections[currentSection].classList.add("active");
+                const prevDivs = sections[currentSection].querySelectorAll(".slide-item");
+                currentDiv = prevDivs.length;
+                prevDivs.forEach(div => div.classList.add("visible"));
+            }
+        }
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "ArrowRight") {
+                showNextDiv();
+            } else if (e.key === "ArrowLeft") {
+                showPrevDiv();
+            }
+        });
+    </script>
+</body>
+
+</html>

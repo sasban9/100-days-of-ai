@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Day 1 of 100: Hands-on AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Homenaje&family=Kranky&family=Mynerve&family=Quintessential&family=Rationale&family=Sixtyfour&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            overflow: hidden;
+            font-size: 1.6rem;
+        }
+        b{font-family: "Coming Soon",fantasy;color: brown;font-size: 1.8rem;}
+        h3{padding: 0px 30px;background: #fff9;}
+        section {
+            display: none;
+            height: 100vh;
+            width: 100vw;
+            padding: 10px 30px;
+            box-sizing: border-box;
+            line-height: 2;
+        }
+
+        section.active {
+            display: flex;flex-direction: row;gap: 2rem;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        section:nth-child(odd) {
+            background: #c837;
+        }
+
+        section:nth-child(even) {
+            background: #dfefff;
+        }
+
+        .slide-item {
+            opacity: 0;max-width: 25%;padding: 0 10px;
+            /* border-bottom: solid 1px #0003; */
+            box-shadow: -4px 0 4px #0004;
+            background: #fffa;
+            /* text-align: center; */
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .slide-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://thumbs.dreamstime.com/b/sb-logo-monogram-circle-piece-ribbon-style-gold-colors-sb-logo-monogram-circle-piece-ribbon-style-gold-colors-179737215.jpg" height="140" alt="" style="position: absolute;bottom: 1rem;left: 1rem;z-index: 999;border-radius: 100%;">
+    <!-- <section class="active">
+        <div class="slide-item">
+            <h1>Welcome</h1>
+        </div>
+        <div class="slide-item">
+            <p>This is the first slide.</p>
+        </div>
+        <div class="slide-item"><img
+                src="https://i.ytimg.com/vi/rVf7l0jYytc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA8tFqOfSDNAPuCzyN7YAtSVjJy0g"
+                alt="placeholder"></div>
+    </section> -->
+
+
+    <section class="active">
+        <h2>🛠 Tools You’ll Learn in 100 Days of AI - Hands-on</h2>
+<div class="slide-item">Here's a full catalog of all the <b>online tools/platforms</b> you’ll touch during the <b>100 Days of AI</b> roadmap. </div>
+<div class="slide-item">You’ll see the “tech stack” at a glance before diving in. <br>
+I’ll break it down phase by phase (matching the roadmap I gave you earlier).</div>
+
+</section><section>
+
+<h3>Days 1 - 10: Prompt Mastery</h3>
+
+<div class="slide-item">&cir; <b>ChatGPT</b> (OpenAI)<br>
+&cir; <b>Claude</b> (Anthropic)<br>
+&cir; <b>Gemini</b> (Google DeepMind)<br>
+&cir; (Optional: Perplexity AI, for research prompts)</div>
+
+</section><section style="background: linear-gradient(90deg,#0000,#000), url(https://blog.n8n.io/content/images/size/w1200/2024/10/ai-workflow-automationA--1-.png);background-size: cover;">
+
+<h3>Days 11 - 20: No-Code Automation</h3>
+
+<div class="slide-item">&cir; <b>Zapier</b> (AI-powered automations between apps)<br>
+&cir; <b>Make.com</b> (advanced no-code workflows)<br>
+&cir; <b>Loom</b> (video recording/sharing for demos)<br>
+&cir; <b>Google Sheets + Docs</b> (AI-linked automation destinations)</div>
+
+</section><section style="background: linear-gradient(90deg,#fff6,#fff0), url() 50% 50%;background-size: cover;">
+
+<h3>Days 21 - 30: No-Code AI Apps</h3>
+
+<div class="slide-item"><img src="https://cdn.prod.website-files.com/5fc90bae06ffc6ed06fd0e3c/627bc5244f445b631f57bbc6_No%20Code%20Development.jpeg" alt="" width="480"><br> &cir; <b>Bubble</b> (web app builder)<br>
+&cir; <b>Glide</b> (mobile-first no-code app builder)<br>
+&cir; <b>OpenAI API</b> (integrated inside Bubble/Glide)</div>
+
+</section><section style="background: linear-gradient(-90deg,#fff,#fff0),url(https://www.nextiva.com/cdn-cgi/image/width=1280,height=720,fit=cover,gravity=auto,format=auto/blog/wp-content/uploads/sites/10/2024/11/Chatbot-Call-Center.webp?resize=1024,576);background-size: cover;">
+
+<h3>Days 31 - 40: Chatbots</h3>
+
+<div class="slide-item">&cir; <b>Chatbase</b> (no-code chatbot builder from your data)<br>
+&cir; <b>Voiceflow</b> (designing conversational AI + voice assistants)<br>
+&cir; (Optional: Landbot, Botpress — for experimentation)</div>
+
+</section><section>
+
+<div><h3>Days 41 - 50: Generative AI Creativity<img src="https://www.thinkebiz.net/wp-content/uploads/2023/10/types-of-generative-AI.jpg" alt="" width="500"></h3>
+</div>
+
+<div class="slide-item">&cir; <b>MidJourney</b> (AI image generation via Discord)<br>
+&cir; <b>Stable Diffusion</b> (via web UIs like Stability.ai or Playground)<br>
+&cir; <b>Runway Gen-3</b> (AI video generation)<br>
+&cir; <b>Pika Labs</b> (AI video-to-video transformations)</div>
+
+<div class="slide-item"><br>
+&cir; <b>Suno AI</b> (music generation)<br>
+&cir; <b>Udio</b> (alternative for music/audio generation)<br>
+&cir; <b>ElevenLabs</b> (AI voice cloning & narration)<br>
+&cir; <b>Canva AI</b> (optional — quick content creation)</div>
+
+</section><section>
+
+<h3>Days 51 - 60: Workflow Orchestration</h3>
+
+<div class="slide-item">&cir; <b>Flowise</b> (drag-and-drop agent orchestration)<br>
+&cir; <b>Relevance AI</b> (business-ready multi-agent workflows)<br>
+&cir; <b>CrewAI</b> (optional advanced multi-agent framework)<br>
+&cir; <b>Autogen Studio</b> (optional, experiment with agents)</div>
+
+</section><section>
+
+<h3>Days 61 - 70: Data & Insights</h3>
+
+<div class="slide-item">&cir; <b>Akkio</b> (no-code predictive analytics)<br>
+&cir; <b>ObviouslyAI</b> (business-focused AI data analysis)<br>
+&cir; <b>Google Sheets + AI connectors</b> (for live data feeds)<br>
+&cir; (Optional: Tableau AI or PowerBI Copilot, if you want dashboards at enterprise level)</div>
+
+</section><section>
+
+<h3>Days 71 - 80: Monetization</h3>
+
+&cir; **Carrd** (simple personal site builder for your services)
+&cir; **Webflow** (advanced portfolio/agency site)
+&cir; **Gumroad** (sell digital AI templates/apps)
+&cir; **Canva AI** (for creating pitch decks + visuals)
+
+</section><section>
+
+<h3>Days 81 - 90: Niche Specialization</h3>
+
+&cir; Tools repeat here, but applied to a niche:
+
+  * **Chatbase** (niche chatbot)
+  * **Zapier/Make** (niche automation)
+  * **Akkio** (niche dashboard/forecasting)
+&cir; (Optional: niche-specific tools, e.g., **Tavus** for personalized AI videos in marketing)
+
+</section><section style="background: radial-gradient(#fff0,#fff6,#000a,#000), url(https://www.falmouth.ac.uk/sites/default/files/styles/full_screen_large_tablet_/public/image/students_15_fbs_cmatt_jessop_1_1.jpg?itok=27swDLSU) 50% 50%; background-size: cover;">
+
+<h3>Days 91 - 100: Portfolio & Launch</h3>
+
+<div class="slide-item">&cir; <b>Carrd / Webflow</b> (final polished site)<br>
+&cir; <b>Notion</b> (documenting your Prompt Playbook)<br>
+&cir; <b>Loom</b> (video demos of your projects)<br>
+&cir; <b>LinkedIn / X (Twitter)</b> (for sharing your journey & landing clients)</div>
+
+</section><section>
+
+<h3><img src="https://assets.ltkcontent.com/images/86791/synopsis-example_7abbbb2796.jpg" width="300" alt=""></h3>
+<div class="slide-item">By the end of 100 days, you’ll be fluent in <b>25+ essential no-code AI platforms</b>, covering:</div>
+<div class="slide-item">
+    &cir; Prompting (ChatGPT, Claude, Gemini)<br>
+&cir; Automation (Zapier, Make)<br>
+&cir; App building (Bubble, Glide)<br>
+&cir; Chatbots (Chatbase, Voiceflow)<br>
+&cir; Generative media (MidJourney, Runway, Suno, ElevenLabs)</div>
+<div class="slide-item">
+&cir; Workflow orchestration (Flowise, Relevance AI)<br>
+&cir; Data insights (Akkio, ObviouslyAI)<br>
+&cir; Monetization & publishing (Carrd, Webflow, Gumroad)</div>
+
+<!-- Do you want me to **reorganize this list into a “Master Map” (clustered by function: Prompting, Automation, Apps, Chatbots, Media, Data, Monetization)** so it’s easier to see the big picture at once? -->
+
+    </section>
+
+    <section>
+        <div class="slide-item">
+            <p>Thanks for watching!</p>
+        </div>
+        <div class="slide-item"><img src="https://sasban9.github.io/www/img/sasban2.jpg" height="200" alt=""></div>
+        <div class="slide-item"><b>2025 @sasban9</b></div>
+    </section>
+    <!-- <section>
+
+        Would you like me to design a **Day 1 worksheet template** (like a PDF with spaces to paste outputs, tick boxes,
+        and write reflections) so you can literally print/fill it in?
+
+    </section> -->
+
+    <script>
+        let currentSection = 0;
+        let currentDiv = 0;
+        const sections = document.querySelectorAll("section");
+
+        function showNextDiv() {
+            const divs = sections[currentSection].querySelectorAll(".slide-item");
+            if (currentDiv < divs.length) {
+                divs[currentDiv].classList.add("visible");
+                currentDiv++;
+            } else {
+                if (currentSection < sections.length - 1) {
+                    sections[currentSection].classList.remove("active");
+                    currentSection++;
+                    sections[currentSection].classList.add("active");
+                    currentDiv = 0;
+                }
+            }
+        }
+
+        function showPrevDiv() {
+            const divs = sections[currentSection].querySelectorAll(".slide-item");
+            if (currentDiv > 0) {
+                currentDiv--;
+                divs[currentDiv].classList.remove("visible");
+            } else if (currentSection > 0) {
+                sections[currentSection].classList.remove("active");
+                currentSection--;
+                sections[currentSection].classList.add("active");
+                const prevDivs = sections[currentSection].querySelectorAll(".slide-item");
+                currentDiv = prevDivs.length;
+                prevDivs.forEach(div => div.classList.add("visible"));
+            }
+        }
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "ArrowRight") {
+                showNextDiv();
+            } else if (e.key === "ArrowLeft") {
+                showPrevDiv();
+            }
+        });
+    </script>
+</body>
+
+</html>

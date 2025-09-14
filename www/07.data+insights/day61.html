@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Day 61 of 100: Hands-on AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Homenaje&family=Kranky&family=Mynerve&family=Quintessential&family=Rationale&family=Sixtyfour&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            overflow: hidden;
+            font-size: 1.6rem;
+        }
+
+        b {
+            font-family: "Coming Soon", fantasy;
+            color: brown;
+            font-size: 1.8rem;
+        }
+
+        section {
+            display: none;
+            height: 100vh;
+            width: 100vw;
+            padding: 10px 30px;
+            box-sizing: border-box;
+            line-height: 2;
+        }
+
+        section.active {
+            display: flex;gap:1rem;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        section:nth-child(odd) {
+            background: #c837;
+        }
+
+        section:nth-child(even) {
+            background: #dfefff;
+        }
+
+        .slide-item {
+            opacity: 0;
+            max-width: 33%;
+            /* text-align: center; */
+            box-shadow: -4px 0 4px #0003;
+            padding: 1rem;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .slide-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://media.istockphoto.com/id/1446438818/vector/sb-initial-letter-logo.jpg?s=612x612&w=0&k=20&c=7OCV0FllswCVpZ42E1sNzXfwHZRe0M-dnkZuPjGQn6Y="
+        height="140" alt="" style="position: absolute;bottom: 1rem;left: 1rem;z-index: 999;border-radius: 100%;">
+    <section class="active">
+<h2>Day 61 — Lesson Expansion: First No-Code ML Model (Akkio)</h2>
+<div class="slide-item">Let's expand <b>Day 61</b>. This is where you start transitioning from multi-agent workflows into <u>AI data & insights</u>. </div>
+<div class="slide-item">The focus today is to get comfortable with a no-code ML platform like <b>Akkio</b> so you can build predictive models and dashboards without touching code.</div>
+
+</section><section>
+
+<h2>Lesson Expansion: First No-Code ML Model (Akkio)</h2>
+
+<div class="slide-item"><b>Goal:</b> By the end of today, you'll have uploaded a dataset, explored it with AI insights, and trained your <u>first predictive model</u> — all without writing code.</div>
+
+</section><section>
+
+<h3>Step 1: Sign Up & Explore Interface</h3>
+
+<div class="slide-item">
+&cir; Go to <a href="https://akkio.com/">akkio.com</a> and create a free account.<br>
+&cir; Walk through the onboarding demo — it usually shows a sample sales dataset and how predictions are made.<br>
+&cir; Familiarize yourself with the dashboard: <b>Datasets, Models, Insights, Deployments</b>.</div>
+
+</section><section>
+
+<h3>Step 2: Choose a Dataset</h3>
+
+<div class="slide-item">Pick one of these:<br>
+
+&cir; Use Akkio's <u>sample datasets</u> (like sales leads, churn, or marketing performance).<br>
+&cir; Or upload a <b>Google Sheet/CSV</b> with simple data (sales by month, customer attributes, expenses).</div>
+
+<div class="slide-item">Example if using sales data:<br>
+
+&cir; Columns: <code>Lead Source</code>, <code>Company Size</code>, <code>Budget</code>, <code>Converted (Yes/No)</code></div>
+
+</section><section>
+
+<h3>Step 3: Explore with AI Insights</h3>
+
+<div class="slide-item">Click <b>“Explore Data”</b> → Akkio's AI will automatically highlight patterns.</div>
+<div class="slide-item">Ask:<br>
+  &cir; What variables are most correlated with conversion?<br>
+  &cir; Which customers are likely to churn?<br>
+  &cir; Which channels bring highest ROI?</div>
+
+<div class="slide-item">Note at least <b>3 insights</b> — this is your first data storytelling step.</div>
+
+</section><section>
+
+<h3>Step 4: Train Your First Model</h3>
+
+<div class="slide-item">Click <b>“Predict”</b> → select a target column (e.g., <code>Converted</code>, <code>Churned</code>, <code>Revenue</code>).<br>
+Let Akkio train automatically.</div>
+<div class="slide-item">Review <b>Model Performance Metrics</b>:<br>
+  &cir; Accuracy / F1 score<br>
+  &cir; Feature importance (which factors matter most)</div>
+
+</section><section>
+
+<h3>Step 5: Test Predictions</h3>
+
+<div class="slide-item">Enter a few <b>manual test cases</b>:<br>
+  &cir; Example: A lead from LinkedIn, $50k budget, 200 employees → does model predict “High chance of conversion”?<br>
+Save at least 3 test predictions.</div>
+
+</section><section>
+
+<h3>Step 6: Create a Simple Dashboard</h3>
+
+<div class="slide-item">Use Akkio's drag-and-drop <b>dashboard builder</b>.</div>
+<div class="slide-item">
+Add widgets like:<br>
+  &cir; “Top 3 factors driving conversion”<br>
+  &cir; “Predicted revenue by channel”<br>
+  &cir; “High-value vs low-value customers”
+
+</div>
+<div class="slide-item">Export dashboard as a <b>shareable link</b>.</div>
+
+</section><section>
+
+<h3>Step 7: Document the Case Study</h3>
+
+<div class="slide-item">
+    Write down:<br>
+
+&cir; Problem: “Predict which sales leads will convert.”<br>
+&cir; Tools: Akkio (no-code ML).<br>
+&cir; Dataset: <b>[Describe briefly]</b>.<br>
+&cir; Result: Model achieved X% accuracy, with <b>[Factor A, Factor B]</b> as top predictors.<br>
+&cir; Visual: Screenshot of dashboard.
+</div>
+
+</section><section>
+
+<h3>Step 8: Portfolio & Sharing</h3>
+
+<div class="slide-item">Add this to your <b>portfolio under ‘AI for Business Insights.’</b></div>
+<div class="slide-item">Share a post:<br>
+<blockquote>“Today I trained my first no-code ML model in Akkio. It predicts which customers are most likely to convert. Accuracy: 82%. No coding required. 🚀”</blockquote></div>
+
+</section><section>
+
+<h3>✅ Outcome for Day 61</h3>
+
+<div class="slide-item">
+&cir; First <b>end-to-end ML project</b> (dataset → model → dashboard).<br>
+&cir; Case study documented for your portfolio.<br>
+&cir; Experience with <b>AI-assisted data exploration</b>.
+</div>
+
+</section><section>
+
+<div class="slide-item">Do you want me to also <b>expand Day 62</b> in the same style (predictive sales forecast project in Akkio), so you see how the roadmap builds project by project?</div>
+
+    </section>
+
+    <script>
+        let currentSection = 0;
+        let currentDiv = 0;
+        const sections = document.querySelectorAll("section");
+
+        function showNextDiv() {
+            const divs = sections[currentSection].querySelectorAll(".slide-item");
+            if (currentDiv < divs.length) {
+                divs[currentDiv].classList.add("visible");
+                currentDiv++;
+            } else {
+                if (currentSection < sections.length - 1) {
+                    sections[currentSection].classList.remove("active");
+                    currentSection++;
+                    sections[currentSection].classList.add("active");
+                    currentDiv = 0;
+                }
+            }
+        }
+
+        function showPrevDiv() {
+            const divs = sections[currentSection].querySelectorAll(".slide-item");
+            if (currentDiv > 0) {
+                currentDiv--;
+                divs[currentDiv].classList.remove("visible");
+            } else if (currentSection > 0) {
+                sections[currentSection].classList.remove("active");
+                currentSection--;
+                sections[currentSection].classList.add("active");
+                const prevDivs = sections[currentSection].querySelectorAll(".slide-item");
+                currentDiv = prevDivs.length;
+                prevDivs.forEach(div => div.classList.add("visible"));
+            }
+        }
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "ArrowRight") {
+                showNextDiv();
+            } else if (e.key === "ArrowLeft") {
+                showPrevDiv();
+            }
+        });
+    </script>
+</body>
+
+</html>

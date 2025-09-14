@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Day 60 of 100: Hands-on AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Homenaje&family=Kranky&family=Mynerve&family=Quintessential&family=Rationale&family=Sixtyfour&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            overflow: hidden;
+            font-size: 1.6rem;
+        }
+
+        b {
+            font-family: "Coming Soon", fantasy;
+            color: brown;
+            font-size: 1.8rem;
+        }
+
+        section {
+            display: none;
+            height: 100vh;
+            width: 100vw;
+            padding: 10px 30px;
+            box-sizing: border-box;
+            line-height: 2;
+        }
+
+        section.active {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        section:nth-child(odd) {
+            background: #c837;
+        }
+
+        section:nth-child(even) {
+            background: #dfefff;
+        }
+
+        .slide-item {
+            opacity: 0;
+            max-width: 33%;
+            /* text-align: center; */
+            box-shadow: -4px 0 4px #0003;
+            padding: 1rem;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .slide-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://media.istockphoto.com/id/1446438818/vector/sb-initial-letter-logo.jpg?s=612x612&w=0&k=20&c=7OCV0FllswCVpZ42E1sNzXfwHZRe0M-dnkZuPjGQn6Y="
+        height="140" alt="" style="position: absolute;bottom: 1rem;left: 1rem;z-index: 999;border-radius: 100%;">
+    <section class="active">
+        <h2>Day 60 — Lesson Expansion:<br> Multi-Agent Workflow Demo</h2>
+
+        <div class="slide-item"><i>Day 60</i> is a pivotal day because it's the <u>culmination of your first multi-agent
+                workflow sprint</u>. </div>
+        <div class="slide-item">By the end of Day 60, you should have a working system that chains multiple AI “agents”
+            together, ready to showcase as a demo or portfolio project.</div>
+
+    </section>
+    <section>
+
+        <h2>Multi-Agent Workflow Demo</h2>
+
+        <div class="slide-item">
+            <h3>Goal: </h3>
+            By the end of the day, you will have a <i>fully working multi-agent AI workflow</i> that can autonomously
+            handle a complex task, from input to final output, without manual intervention. You'll also record a <b>demo
+                video</b> to showcase your work.
+        </div>
+
+    </section>
+    <section>
+
+        <h3>Step 1: Review Your Workflow</h3>
+
+        <div class="slide-item">
+            <p>* Ensure your workflow has at least <b>3 agents</b>:</p>
+
+            1. <b>Research Agent:</b> Gathers or generates information.<br>
+            2. <b>Summarizer Agent:</b> Condenses the information into usable content.<br>
+            3. <b>Content Writer Agent:</b> Formats output (blog post, social media, email, table, etc.).
+        </div>
+        <div class="slide-item">
+
+            * Optional 4th Agent: <b>Output Formatter/Publisher</b> that converts the final output into the desired
+            format or posts it automatically.
+        </div>
+
+        <div class="slide-item">
+            Checklist:<br>
+
+            * Input source is defined (text prompt, PDF, URL, database).<br>
+            * Each agent is assigned a clear task.<br>
+            * Connections between agents are working (output → input).
+        </div>
+
+    </section>
+    <section>
+
+        <h3>Step 2: Test Agents Individually</h3>
+
+        <div class="slide-item">Run each agent <u>in isolation</u> to confirm it behaves as expected:<br>
+
+            * <b>Research Agent</b>: Does it return relevant information?<br>
+            * <b>Summarizer</b>: Does it condense without losing meaning?<br>
+            * <b>Content Writer</b>: Is the style correct? (formal, casual, marketing, technical)
+            <hr>
+            Adjust prompts or settings if needed.
+        </div>
+
+    </section>
+    <section>
+
+        <h3>Step 3: Chain Agents Together</h3>
+
+        <div class="slide-item">
+            * Use your orchestration tool (Flowise, Relevance AI, n8n) to <u>connect agents in sequence</u>.<br>
+            * Check that the output of one agent becomes the input of the next.<br>
+            * Test end-to-end with a single input.
+            <hr>
+        </div>
+
+        <div class="slide-item">
+            Example workflow:<br>
+
+            <b>* Input:</b> “Top 10 productivity tips for remote workers”<br>
+            <b>* Research Agent:</b> Collects tips from multiple sources.<br>
+            <b>* Summarizer Agent:</b> Condenses tips into 5 actionable points.<br>
+            <b>* Content Writer Agent:</b> Writes a blog post in 200 words with a friendly tone.
+        </div>
+
+    </section>
+    <section>
+
+        <h3>Step 4: Add Final Touches</h3>
+
+        <div class="slide-item">
+            Optional: Add <b>filters or rules</b> for quality control.<br><br>
+
+            * E.g., “Remove duplicate points” or “Ensure readability score &lt; 70”.<br>
+            * Add formatting instructions: bullet points, headings, tables.<br>
+            * Test 2 - 3 variations of input to ensure robustness.
+        </div>
+
+    </section>
+    <section>
+
+        <h3>Step 5: Record Demo</h3>
+
+        <div class="slide-item">
+            Use <b>Loom, OBS, or QuickTime</b> to record:<br>
+
+            1. Your workflow interface in Flowise/Relevance AI.<br>
+            2. Input being processed.<br>
+            3. Output generation by each agent.
+        </div>
+
+        <div class="slide-item">Optional: Narrate each step for clarity (“This is the research agent collecting info…”).
+        </div>
+
+    </section>
+    <section>
+
+        <h2>Step 6: Document for Portfolio</h2>
+
+        <div class="slide-item">
+            Save screenshots or videos.
+            <hr>
+            Write a 3 - 5 sentence explanation:<br>
+
+            * Problem solved<br>
+            * How agents interact<br>
+            * Tools used<br>
+            * Result or impact
+        </div>
+
+        <div class="slide-item">* Add this as a <b>case study on your portfolio site</b>.</div>
+
+    </section>
+    <section>
+
+        <h3>Pro Tips</h3>
+
+        <div class="slide-item">
+            * Use clear naming for each agent (ResearchBot, SummaryBot, WriterBot) — makes it look professional.<br>
+            * Start with a simple workflow first; complexity can be added after you validate.<br>
+
+        </div>
+        <div class="slide-item">* If time allows, <b>add a real-world client scenario</b> to demonstrate practical value
+            (e.g., summarize customer reviews for an e-commerce store).</div>
+
+    </section>
+    <section>
+
+        <h2>✅ Outcome for Day 60</h2>
+
+        <div class="slide-item">
+            * A fully functional <b>multi-agent AI workflow</b>.<br>
+            * Recorded demo video ready for portfolio.<br>
+            * Case study write-up added to your portfolio.<br>
+            * Confidence to showcase multi-agent systems to clients or on social media.
+        </div>
+
+    </section>
+    <section>
+
+        <div class="slide-item">If you want, I can <b>design Days 61 - 70 with the same expanded lesson style</b>,
+            showing exactly what to do for AI dashboards, no-code ML, and real business insights. </div>
+        <div class="slide-item">This way, every day has a complete, actionable learning path.<br>
+            Do you want me to do that next?</div>
+
+    </section>
+
+    <script>
+        let currentSection = 0;
+        let currentDiv = 0;
+        const sections = document.querySelectorAll("section");
+
+        function showNextDiv() {
+            const divs = sections[currentSection].querySelectorAll(".slide-item");
+            if (currentDiv < divs.length) {
+                divs[currentDiv].classList.add("visible");
+                currentDiv++;
+            } else {
+                if (currentSection < sections.length - 1) {
+                    sections[currentSection].classList.remove("active");
+                    currentSection++;
+                    sections[currentSection].classList.add("active");
+                    currentDiv = 0;
+                }
+            }
+        }
+
+        function showPrevDiv() {
+            const divs = sections[currentSection].querySelectorAll(".slide-item");
+            if (currentDiv > 0) {
+                currentDiv--;
+                divs[currentDiv].classList.remove("visible");
+            } else if (currentSection > 0) {
+                sections[currentSection].classList.remove("active");
+                currentSection--;
+                sections[currentSection].classList.add("active");
+                const prevDivs = sections[currentSection].querySelectorAll(".slide-item");
+                currentDiv = prevDivs.length;
+                prevDivs.forEach(div => div.classList.add("visible"));
+            }
+        }
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "ArrowRight") {
+                showNextDiv();
+            } else if (e.key === "ArrowLeft") {
+                showPrevDiv();
+            }
+        });
+    </script>
+</body>
+
+</html>
